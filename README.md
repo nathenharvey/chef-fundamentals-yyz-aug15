@@ -2,6 +2,10 @@
 
 Chef Fundamentals class and code from August, 2015 in Toronto.
 
+The slides from this class are here in this repo as both pdf and pptx.
+
+The slides from ALL of the Chef courses are available at [http://bit.ly/opschef-opentraining](http://bit.ly/opschef-opentraining).
+
 ### Git repos from day 1
 
 * https://github.com/nathenharvey/yyz-workstation
