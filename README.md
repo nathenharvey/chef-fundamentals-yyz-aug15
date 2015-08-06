@@ -10,17 +10,26 @@ Chef Fundamentals class and code from August, 2015 in Toronto.
 ### Some random notes:
 
 1.  does chef-client complete successfully?
+
         * kitchen converge
+
 2.  is the node properly configured?
+
         * kitchen verify
         * kitchen test
         * kitchen converge, IF audit mode is enabled
+
 3.  are the resources properly defined?
+
         * ChefSpec
+
 4.  am I following the style guide?
+
         * foodcritic
         * rubocop
+
 5.  do I have any syntax errors?
+
         * knife cookbook test
 
 ### Other links..
