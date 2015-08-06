@@ -1,0 +1,9 @@
+{
+  "name": "production",
+  "description": "Where we run production code",
+  "cookbook_versions": {
+    "apache" : "= 0.2.1",
+    "myhaproxy" : "= 0.3.0"
+  }
+}
+
