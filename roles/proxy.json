@@ -1,0 +1,7 @@
+{
+  "name" : "proxy",
+  "description" : "Proxy server",
+  "run_list" : [
+    "recipe[myhaproxy]"
+  ]
+}
