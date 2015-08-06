@@ -3,7 +3,7 @@
   "description": "Where we run production code",
   "cookbook_versions": {
     "apache" : "= 0.2.2",
-    "myhaproxy" : "= 0.3.1"
+    "myhaproxy" : "= 0.3.2"
   },
   "default_attributes" : {
     "payment_processor": "http://paypal.com"
