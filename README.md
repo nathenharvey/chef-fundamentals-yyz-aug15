@@ -34,6 +34,7 @@ Chef Fundamentals class and code from August, 2015 in Toronto.
 
 ### Other links..
 
+* http://jtimberman.housepub.org/blog/2015/04/03/chef-audit-mode-introduction/
 * https://github.com/Nordstrom/chefdk_bootstrap
 * http://foodfightshow.org
 * http://summit.chef.io
