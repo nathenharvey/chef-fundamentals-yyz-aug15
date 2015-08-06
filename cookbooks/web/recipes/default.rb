@@ -4,12 +4,10 @@
 #
 # Copyright (c) 2015 The Authors, All Rights Reserved.
 
-package_name = 'httpd'
+package node['apache']['package']
 
-package package_name
-
-service 'httpd' do
+service node['apache']['service'] do
   action :start
 end
 
-template '/var/www/html/index.html'
+template "#{node['apache']['docroot']}/index.html"
