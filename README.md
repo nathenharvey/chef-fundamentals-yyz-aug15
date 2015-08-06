@@ -28,3 +28,8 @@ Chef Fundamentals class and code from August, 2015 in Toronto.
 * https://github.com/Nordstrom/chefdk_bootstrap
 * http://foodfightshow.org
 * http://summit.chef.io
+
+### Some really fun videos!
+
+* http://ei.chef.io
+* http://eggs.chef.io
