@@ -1,31 +1,30 @@
-The chef-repo
-===============
-All installations require a central workspace known as the chef-repo. This is a place where primitive objects--cookbooks, roles, environments, data bags, and chef-repo configuration files--are stored and managed.
+# Chef Fundamentals
 
-The chef-repo should be kept under version control, such as [git](http://git-scm.org), and then managed as if it were source code.
+Chef Fundamentals class and code from August, 2015 in Toronto.
 
-Knife Configuration
--------------------
-Knife is the [command line interface](https://docs.chef.io/knife.html) for Chef. The chef-repo contains a .chef directory (which is a hidden directory by default) in which the Knife configuration file (knife.rb) is located. This file contains configuration settings for the chef-repo.
+### Git repos from day 1
 
-The knife.rb file is automatically created by the starter kit. This file can be customized to support configuration settings used by [cloud provider options](https://docs.chef.io/plugin_knife.html) and custom [knife plugins](https://docs.chef.io/plugin_knife_custom.html).
+* https://github.com/nathenharvey/yyz-workstation
+* https://github.com/nathenharvey/yyz-apache
 
-Also located inside the .chef directory are .pem files, which contain private keys used to authenticate requests made to the Chef server. The USERNAME.pem file contains a private key unique to the user (and should never be shared with anyone). The ORGANIZATION-validator.pem file contains a private key that is global to the entire organization (and is used by all nodes and workstations that send requests to the Chef server).
+### Some random notes:
 
-More information about knife.rb configuration options can be found in [the documentation for knife](https://docs.chef.io/config_rb_knife.html).
+1.  does chef-client complete successfully?
+        * kitchen converge
+2.  is the node properly configured?
+        * kitchen verify
+        * kitchen test
+        * kitchen converge, IF audit mode is enabled
+3.  are the resources properly defined?
+        * ChefSpec
+4.  am I following the style guide?
+        * foodcritic
+        * rubocop
+5.  do I have any syntax errors?
+        * knife cookbook test
 
-Cookbooks
----------
-A cookbook is the fundamental unit of configuration and policy distribution. A sample cookbook can be found in `cookbooks/starter`. After making changes to any cookbook, you must upload it to the Chef server using knife:
+### Other links..
 
-    $ knife upload cookbooks/starter
-
-For more information about cookbooks, see the example files in the `starter` cookbook.
-
-Roles
------
-Roles provide logical grouping of cookbooks and other roles. A sample role can be found at `roles/starter.rb`.
-
-Getting Started
--------------------------
-Now that you have the chef-repo ready to go, check out [Learn Chef](https://learn.chef.io/) to proceed with your workstation setup. If you have any questions about Chef you can always ask [our support team](https://www.chef.io/support/) for a helping hand.
+* https://github.com/Nordstrom/chefdk_bootstrap
+* http://foodfightshow.org
+* http://summit.chef.io
