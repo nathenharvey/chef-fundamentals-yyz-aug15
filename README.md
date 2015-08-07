@@ -11,6 +11,10 @@ The slides from ALL of the Chef courses are available at [http://bit.ly/opschef-
 * https://github.com/nathenharvey/yyz-workstation
 * https://github.com/nathenharvey/yyz-apache
 
+### Recording of the Meetup
+
+Missed the Chef meetup? Don't worry, I recorded it and it's now [available on YouTube](https://www.youtube.com/watch?v=CezI61p6de4)
+
 ### Some random notes:
 
 1.  does chef-client complete successfully?
